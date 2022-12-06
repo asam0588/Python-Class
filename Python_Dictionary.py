@@ -16,6 +16,7 @@ print(dict2)
 print(len(dict2))
 
 # how to access value of a particular key
+# The below syntax works well for accessing the dictionary values and also updating the values
 print(dict2['name'])
 print(dict2['skills'][0])
 print(dict2['other_details']['nationality'])
@@ -23,6 +24,15 @@ print(dict2['other_details']['nationality'])
 
 # how to update value on a particular key
 dict2['age'] = 30
+print(dict2)
+
+# How to add values if the value is a list
+dict2["skills"].append("SQL")
+print(dict2)
+
+# Updating/changing a key 
+dict2["my_age"]=dict2["age"]
+del dict2["age"]
 print(dict2)
 
 # How to get the keys from a dictionary
